@@ -4,31 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Poem Generator</title>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playpen+Sans:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
 
   <body>
-    <h1>Welcome to AI Poem Generator</h1>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter a topic of English Poem"
-          autofocus
-          required
-        />
-        <input type="submit" value="submit" id="submit-button" />
-      </form>
+    <div class="container">
+      <h1>Welcome to AI Poem Generator</h1>
+      <main>
+        <div class="form-container">
+          <form class="input-form">
+            <input
+              type="text"
+              placeholder="Enter a topic of English Poem"
+              autofocus
+              required
+              class="user-input"
+            />
+            <input type="submit" value="submit" class="submit-button" />
+          </form>
+          <p class="input-example">i.e. Flower, Coffee</p>
+        </div>
+        <div class="result-container">Poem result here</div>
+      </main>
 
-      <div id="result">Poem result here</div>
-    </main>
-    <footer>
-      This AI project was created by Yuki on
-      <a href="https://github.com/yukijina/AI-poem-generator" target="_blank"
-        >Github</a
-      >
-    </footer>
+      <footer>
+        This AI project was created by Yuki on
+        <a href="https://github.com/yukijina/AI-poem-generator" target="_blank"
+          >Github</a
+        >
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
