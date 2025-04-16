@@ -47,13 +47,15 @@ h1 {
   background-color: #27548a;
   color: #fafafa;
   font-size: 16px;
+  margin-left: 3%;
+  width: 22%;
 }
 
 .input-example {
   font-size: 12px;
 }
 
-.result-container {
+.poem-container {
   margin-top: 30px;
   margin-bottom: 50px;
   background-color: #fafafa;
@@ -61,6 +63,28 @@ h1 {
   border-left: 5px solid #27548a;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+}
+
+.poem-container h2 {
+  margin-bottom: 10px;
+}
+
+.poem-container strong {
+  color: #27548a;
+}
+
+.hidden {
+  display: none;
+}
+
+.blink {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 
 footer {
