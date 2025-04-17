@@ -5,11 +5,13 @@
 }
 
 body {
+  background-image: url(../background.jpeg);
   background-color: #d7e7fb;
+  background-blend-mode: overlay;
   font-family: 'Playpen Sans', cursive;
 }
 
-/* #27548A */
+/* Main */
 .container {
   margin: 50px auto;
   max-width: 600px;
@@ -20,11 +22,11 @@ h1 {
 }
 
 .form-container {
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 50px;
   background-color: #fafafa;
   border-radius: 15px;
-  padding: 30px;
+  padding: 45px 30px;
 }
 
 .input-form {
@@ -48,13 +50,14 @@ h1 {
   color: #fafafa;
   font-size: 16px;
   margin-left: 3%;
-  width: 22%;
+  width: 27%;
 }
 
 .input-example {
   font-size: 12px;
 }
 
+/* Poem container - API response data */
 .poem-container {
   margin-top: 30px;
   margin-bottom: 50px;
@@ -73,6 +76,12 @@ h1 {
   color: #27548a;
 }
 
+.poem-container .shecode {
+  color: #ef5e9a;
+  font-size: 14px;
+  line-height: 4;
+}
+
 .hidden {
   display: none;
 }
@@ -87,6 +96,7 @@ h1 {
   }
 }
 
+/* Footer */
 footer {
   text-align: center;
   font-size: 12px;
